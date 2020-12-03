@@ -22,9 +22,9 @@ exports.createPages = async function({ graphql, actions}) {
         allMarkdownRemark {
             edges {
                 node {
-                    fields [
+                    fields {
                         slug
-                    ]
+                    }
                 }
             }
         }
