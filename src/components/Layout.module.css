@@ -13,3 +13,13 @@
 #header h1 {
   margin: 0;
 }
+
+#header h1 a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#header h1 a:hover {
+  color: #10d6d6;
+  text-decoration: wavy underline;
+}
