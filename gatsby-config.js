@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'The Super Coffee Blog'
+    title: 'The Super Book Club'
   },
 
   plugins: [
