@@ -1,5 +1,5 @@
 ---
-title: Welcome to the Coffee Blog ♥
+title: Welcome to the Book Club ♥
 date: 2020-12-01T19:50:19.827Z
 contentKey: blog
 ---
