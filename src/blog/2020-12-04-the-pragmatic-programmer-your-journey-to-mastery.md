@@ -1,6 +1,7 @@
 ---
 title: "The Pragmatic Programmer: Your Journey to Mastery"
 date: 2020-12-04T21:25:34.560Z
+contentKey: blog
 ---
 <!--StartFragment-->
 

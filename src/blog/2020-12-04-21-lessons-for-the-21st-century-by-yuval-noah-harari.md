@@ -1,6 +1,7 @@
 ---
 title: 21 Lessons for the 21st Century by Yuval Noah Harari
 date: 2020-12-04T21:27:48.413Z
+contentKey: blog
 ---
 <!--StartFragment-->
 

@@ -1,6 +1,7 @@
 ---
 title: Do Not Go Gentle Into That Good Night
 date: 2020-12-04T21:23:19.676Z
+contentKey: blog
 ---
 Do not go gentle into that good night,
 Old age should burn and rave at close of day;
