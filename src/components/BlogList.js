@@ -8,7 +8,9 @@ export default function BlogList() {
         {
             allMarkdownRemark (sort: { 
                 fields: frontmatter___date, 
-                order: DESC }) {
+                order: DESC }
+                limit: 3 
+                ) {
                 edges {
                     node {
                         id
@@ -38,6 +40,9 @@ export default function BlogList() {
                     excerpt={edge.node.excerpt}
                 />
             ))}
+            <div>
+                <Link to="/blog">More `{'>>'}`</Link>
+            </div>
         </div>
     )
 }

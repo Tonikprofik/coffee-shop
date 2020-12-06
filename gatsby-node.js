@@ -37,6 +37,8 @@ exports.createPages = async function({ graphql, actions}) {
             context: { slug: node.fields.slug }
         });
     });
+    
+    // Dynamically creating page
 
     const posts = result.data.allMarkdownRemark.edges;
     const pageSize = 5;
