@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { graphql, useStaticQuery } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import BlogPost from './BlogPost'
 
 export default function BlogList() {
@@ -9,7 +9,7 @@ export default function BlogList() {
             allMarkdownRemark (sort: { 
                 fields: frontmatter___date, 
                 order: DESC }
-                limit: 3 
+                limit: 10 
                 ) {
                 edges {
                     node {
@@ -41,8 +41,8 @@ export default function BlogList() {
                 />
             ))}
             <div>
-                <Link to="/blog">More `{'>>'}`</Link>
+                <Link to="/blog">More {'>>'}</Link>
             </div>
         </div>
-    )
+    );
 }

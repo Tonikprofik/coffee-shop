@@ -7,7 +7,8 @@ import styles from './blog-list.module.css';
 export default function BlogListTeamplate({ data, pageContext}) {
 
     //Generate previous and next page URLs
-    const previousPage = pageContext.currentPage === 2 ? '/blog' :
+    const previousPage = pageContext.currentPage === 2 ? 
+         '/blog' :
          `/blog/${pageContext.currentPage - 1}`;
     const nextPage = `/blog/${pageContext.currentPage + 1}`;
 
@@ -28,13 +29,13 @@ export default function BlogListTeamplate({ data, pageContext}) {
             <div id={styles.pageLinks}>
                 {pageContext.currentPage > 1 && (
                     <Link to={previousPage}>
-                        `{'<<'}`Previous Page
+                        {'<<'}Previous Page
                     </Link>
                 )}
 
                 {pageContext.currentPage < pageContext.pageCount && (
                     <Link to={nextPage}>
-                        Next page `&gt;``&gt;`
+                        Next page &gt;&gt;
                     </Link>
                 )}
             </div>
@@ -47,7 +48,7 @@ export const query = graphql`
     query BlogListQuery($skip: Int!, $limit: Int!) {
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
-            filter: { frontmatter: { contentKey: { eq: "blog"}}}
+            # filter: { frontmatter: { contentKey: { eq: "blog"}}}
             limit: $limit
             skip: $skip
         ) {
